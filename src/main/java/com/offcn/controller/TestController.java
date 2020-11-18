@@ -7,6 +7,8 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 演示springsession的使用
+ *
+ * ################线下修改##########################
  */
 @RestController
 public class TestController {
@@ -24,5 +26,11 @@ public class TestController {
     public String getSession(HttpSession session){
         return  (String)session.getAttribute("msg");
 
+    }
+
+
+    public void demo(){
+
+        System.out.println("hhhhhh");
     }
 }
